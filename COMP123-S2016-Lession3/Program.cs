@@ -13,11 +13,11 @@ namespace COMP123_S2016_Lession3
      * 
      * 
      */
-    class Program
+   public class Program
 
 
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
 
         }
