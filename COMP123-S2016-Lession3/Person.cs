@@ -13,6 +13,7 @@ namespace COMP123_S2016_Lession3
      * 
      * @class Person
      * @field _name {string}
+     * @field _age {int}
      * 
      */
 
@@ -20,6 +21,7 @@ namespace COMP123_S2016_Lession3
     {
         //PRIVATE INSTANCE VARIBLES+++++++++++++++++++++++++++++++++++++++++++++++++++
         private string _name;
+        private int _age;
 
         //PUBLIC PROPERTIES+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         /**
