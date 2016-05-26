@@ -54,7 +54,7 @@ namespace COMP123_S2016_Lession3
         public Person ()
         {
             this._name = "unknown name!";
-
+            this._age = 0;
         }
 
         /**
@@ -70,6 +70,52 @@ namespace COMP123_S2016_Lession3
         {
             this._name = name;
 
+        }
+        /**
+        *This is the constructor that takes a parameter and passes it to the _age 
+        * pricate instance variable
+        * 
+        * @constructor Person 
+        * @param {int} age
+        * 
+        */
+        public Person(int age)
+        {
+            this._age = age;
+
+        }
+
+        /**
+        *This is the method that takes a parameter and passes it to the property of _name field 
+        * 
+        * @Method SayHello 
+        * @param {string} name
+        * 
+        */
+
+
+        public  string SayHello(string name)
+        {
+            Person person = new Person(name);
+
+            return person.Name + " is ";
+        }
+
+        /**
+       *This is the method that takes a parameter and passes it to the _age 
+       * private instance variable
+       * 
+       * @Method ShowAge 
+       * @param {int} age
+       * 
+       */
+
+
+        public  string ShowAge(int age)
+        {
+            Person person = new Person(age);
+
+            return  person._age + " years old.";
         }
 
     }
