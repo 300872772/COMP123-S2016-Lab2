@@ -30,10 +30,10 @@ namespace COMP123_S2016_Lession3
        public static void Main(string[] args)
         {
             //crat a new instance of Person class
-            // Person person;
-            // person = new Person("Tom");
-
-            // Console.WriteLine(person.Name);
+             Person tom;
+             tom = new Person("Tom");
+            tom.SaysHello();
+            Console.WriteLine();
 
             //set a value in the Name property of the Person class
             //  person.Name = "Tom";
@@ -42,10 +42,26 @@ namespace COMP123_S2016_Lession3
 
             // Console.WriteLine(person.Name);
 
-            Person person = new Person();
+            //  Person person = new Person();
 
 
-            Console.WriteLine(person.SayHello("Tom") + person.ShowAge(50));
+            //  Console.WriteLine(person.SaysHello("Tom") + person.ShowAge(50));
+
+            Person mark = new Person(30);
+            mark.Name = "Mark";
+            mark.ShowAge();
+
+            Console.WriteLine();
+
+            Person marry = new Person("Marry", 23);
+            marry.SaysHello();
+            marry.ShowAge();
+
+            Person tanya = new Person();
+            tanya.Name = "Tanya";
+            tanya.Age = 28;
+            tanya.SaysHello();
+            tanya.ShowAge();
 
         }
 

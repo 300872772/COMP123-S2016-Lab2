@@ -31,7 +31,7 @@ namespace UnitTestForLession3
             Person person = new Person();
             // private static Person personName = new Person(name);
             // Person personAge = new Person(age);
-            string result = person.SayHello(name);
+            string result = person.SaysHello(name);
 
             //Assert
             Assert.AreEqual(expectedResult, result);
