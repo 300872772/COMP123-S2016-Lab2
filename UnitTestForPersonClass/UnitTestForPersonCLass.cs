@@ -1,4 +1,4 @@
-﻿using COMP123_S2016_Lession3;
+﻿using COMP123_S2016_Lab2;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestForLession3

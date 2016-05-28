@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using COMP123_S2016_Lession3;
+using COMP123_S2016_Lab2;
 
 namespace UnitTestForLession3
 {
