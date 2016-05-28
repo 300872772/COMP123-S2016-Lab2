@@ -1,10 +1,10 @@
 ﻿using COMP123_S2016_Lab2;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestForLession3
+namespace UnitTestForLab2
 {
     /**
-     * This class is used to test Person class under COMP123S2016-Lesson3 project
+     * This class is used to test Person class under COMP123S2016-Lab2 project
      * Used for development only
      * 
      * @class UnitTestForPersonCLass
@@ -14,24 +14,25 @@ namespace UnitTestForLession3
     {
 
         /**
-         * This Method is used to test SayHello Method under COMP123S2016-Lesson3 Person class
+         * This Method is used to test SayHello Method under COMP123S2016-Lab2 Person class
          * Used for development only
          * 
-         * @method TestMethodForPersonSayHello
+         * @method TestMethodForPersonSaysHello
          * */
 
         [TestMethod]
-        public void TestMethodForPersonSayHello()
+        public void TestMethodForPersonSaysHello()
         {
             //Arrange
-            string name = "Tom";
-            string expectedResult = "Tom is ";
+            string name = "Mamun";
+            int age = 30;
+            double height = 5.7;
+            string gender = "male";
+            string expectedResult = "";
 
             // Act
-            Person person = new Person();
-            // private static Person personName = new Person(name);
-            // Person personAge = new Person(age);
-            string result = person.SaysHello(name);
+            Person person = new Person(name,age,height,gender);
+            string result =  person.ShowGender());
 
             //Assert
             Assert.AreEqual(expectedResult, result);
