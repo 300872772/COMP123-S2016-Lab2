@@ -28,11 +28,11 @@ namespace UnitTestForLab2
             int age = 30;
             double height = 5.7;
             string gender = "male";
-            string expectedResult = "";
+            string expectedResult = "Mamun305.71";
 
             // Act
             Person person = new Person(name,age,height,gender);
-            string result =  person.ShowGender());
+            string result = person.Name+person.Age+  person.Height.ToString()+person.Gender.ToString();
 
             //Assert
             Assert.AreEqual(expectedResult, result);
